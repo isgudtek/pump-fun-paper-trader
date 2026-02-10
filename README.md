@@ -1,4 +1,4 @@
-# Pump.fun Paper Trader 🚀
+# PumpPaperTrader 🚀
 
 A Chrome extension I built to practice trading on **pump.fun** without risking real SOL. It injects a simulation interface directly into the specific token page, allowing for realistic paper trading with live P/L tracking.
 
@@ -10,6 +10,7 @@ A Chrome extension I built to practice trading on **pump.fun** without risking r
     - Prevents selling without an open position.
     - Tracks "Entry MCAP" vs "Current MCAP".
     - Hardcoded to **1 SOL** per buy for consistent simulation.
+    - **Clickable Links**: Easily navigate to the token page from your active positions or trade history.
 - **Trade History**: A popup dashboard that shows all active positions and a log of recent realized profits/losses.
 - **Persistent Data**: Uses `chrome.storage.local` so positions are saved even if I close the browser.
 

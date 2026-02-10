@@ -16,9 +16,10 @@ async function loadData() {
 
             const card = document.createElement('div');
             card.className = 'trade-card';
+            // SURGICAL EDIT: Wrapped symbol in <a> tag
             card.innerHTML = `
                 <div class="trade-header">
-                    <span class="symbol">${pos.symbol}</span>
+                    <a href="https://pump.fun/coin/${pos.mint}" target="_blank" class="symbol-link">${pos.symbol} ↗</a>
                     <span class="type" style="background: ${isProfit ? 'rgba(31,217,120,0.2)' : 'rgba(239,68,68,0.2)'}; color: ${isProfit ? '#1FD978' : '#ef4444'}">
                         ${isProfit ? '+' : ''}${liveROI}%
                     </span>
@@ -53,9 +54,10 @@ async function loadData() {
             const isProfit = trade.profitSol >= 0;
             const logItem = document.createElement('div');
             logItem.className = 'history-item';
+            // SURGICAL EDIT: Wrapped symbol in <a> tag
             logItem.innerHTML = `
                 <div style="display:flex; justify-content:space-between; align-items:center;">
-                    <span><strong>${trade.symbol}</strong></span>
+                    <a href="https://pump.fun/coin/${trade.mint}" target="_blank" class="symbol-link-small"><strong>${trade.symbol}</strong></a>
                     <span style="color: ${isProfit ? '#1FD978' : '#ef4444'}">
                         ${isProfit ? '+' : ''}${trade.profitSol.toFixed(3)} SOL (${((trade.exitMcap - trade.entryMcap) / trade.entryMcap * 100).toFixed(1)}%)
                     </span>

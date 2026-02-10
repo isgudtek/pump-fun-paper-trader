@@ -132,3 +132,29 @@ h1 {
     padding: 2rem 0;
     font-style: italic;
 }
+
+/* LINK STYLES */
+.symbol-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.symbol-link:hover {
+    text-decoration: underline;
+    color: var(--green);
+}
+
+.symbol-link-small {
+    color: white;
+    text-decoration: none;
+}
+
+.symbol-link-small:hover {
+    text-decoration: underline;
+    color: var(--green);
+}

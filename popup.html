@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pump Paper Trader</title>
+    <link rel="stylesheet" href="popup.css">
+    <style>
+        .section-title {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin: 1rem 0 0.5rem 0;
+            font-weight: 700;
+        }
+
+        .history-item {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 6px;
+            padding: 8px;
+            margin-bottom: 6px;
+            border-left: 3px solid #333;
+        }
+
+        #history-list {
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Paper Trader</h1>
+        <button id="clear-all" class="btn-small">Reset</button>
+    </div>
+
+    <div class="section-title">Open Positions</div>
+    <div id="positions-list">
+        <div class="empty-state">No open positions</div>
+    </div>
+
+    <div class="section-title">Recent Realized P/L</div>
+    <div id="history-list">
+        <div class="empty-state">No history yet</div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

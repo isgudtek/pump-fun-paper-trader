@@ -1,0 +1,134 @@
+:root {
+    --bg-dark: #0a0b0d;
+    --bg-card: #1a1b1e;
+    --text-primary: #ffffff;
+    --text-secondary: #94a3b8;
+    --green: #1FD978;
+    --red: #ef4444;
+}
+
+body {
+    width: 350px;
+    margin: 0;
+    padding: 1rem;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.75rem;
+}
+
+h1 {
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: 800;
+}
+
+.btn-small {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-secondary);
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.75rem;
+}
+
+.btn-small:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+#positions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.trade-card {
+    background: var(--bg-card);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.trade-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.symbol {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.type {
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.type-BUY {
+    background: rgba(31, 217, 120, 0.1);
+    color: var(--green);
+}
+
+.type-SELL {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--red);
+}
+
+.trade-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.value {
+    color: white;
+    font-weight: 600;
+}
+
+.actions {
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-close {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    color: var(--red);
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-close:hover {
+    background: var(--red);
+    color: white;
+}
+
+.empty-state {
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 2rem 0;
+    font-style: italic;
+}
